@@ -12,7 +12,7 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
         {/* SIDEBAR */}
-        <div className="w-[15%] md:w-[8%] lg:w-[15%] p-8">
+        <div className="w-[15%] md:w-[8%] lg:w-[15%] p-4">
             <Link href="/" className="flex justify-center items-center lg:justify-start">
             <Image src="/logo.png" width={32} height={24} alt="logo"/>
             <span className="hidden lg:block">Schoolardi</span>
