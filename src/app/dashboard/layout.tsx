@@ -1,4 +1,5 @@
 import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 import { Span } from "next/dist/trace";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +20,10 @@ export default function DashboardLayout({
             <Menu/>
         </div>
         {/* MAIN */}
-        <div className="w-[85%] md:w-[92%] lg:w-[85%] bg-blue-50"></div>
+        <div className="w-[85%] md:w-[92%] lg:w-[85%] bg-blue-50 overflow-scroll">
+          <Navbar/>
+          {children}
+        </div>
     </div>
   );
 }
