@@ -32,13 +32,13 @@ const style = {
 
 const CountChart = () => {
   return (
-    <div className='bg-white flex p-5 rounded-2xl flex-col'>
+    <div className='w-full bg-white flex p-5 rounded-2xl flex-col'>
         <div className="flex justify-between items-center">
             <h1 className="text-lg font-medium">Student</h1>
             <Image src="/moreDark.png" alt="" width={20} height={20}/>
         </div>
         <div className='relative w-full h-[75%]'>
-            <ResponsiveContainer width="100%" height={250}>
+            <ResponsiveContainer width="100%" height="100%">
                 <RadialBarChart cx="50%" cy="50%" innerRadius="40%" outerRadius="100%" barSize={32} data={data}>
                 <RadialBar
                     background
