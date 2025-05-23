@@ -37,7 +37,7 @@ const data = [
 
 const AttendanceChart = () => {
   return (
-    <div className='bg-white flex p-5 rounded-2xl flex-col'>
+    <div className='bg-white flex w-full p-5 rounded-2xl flex-col'>
         <div className="flex justify-between items-center">
                 <h1 className="text-lg font-medium">Student</h1>
                 <Image src="/moreDark.png" alt="" width={20} height={20}/>

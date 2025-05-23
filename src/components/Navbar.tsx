@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between p-4">
+    <div className="flex items-center justify-between px-8 py-6">
         {/* SIDE SEARCH */}
         <div className="hidden md:flex ring-[1.5px] rounded-full ring-gray-300 px-3 gap-1 text-xs items-center">
             <Image src="/search.png" width={14} height={14} alt="" />
