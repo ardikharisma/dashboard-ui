@@ -1,6 +1,7 @@
 import Announcement from "@/components/Announcement"
 import BigCalendar from "@/components/BigCalendar"
-const TeacherPage = () => {
+
+const ParentPage = () => {
   return (
     <div className="flex-1 flex px-7 py-0 flex-col gap-6 md:flex-row">
 
@@ -23,4 +24,4 @@ const TeacherPage = () => {
   )
 }
 
-export default TeacherPage
+export default ParentPage
