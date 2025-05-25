@@ -6,11 +6,11 @@ import { tr } from "date-fns/locale"
 import Image from "next/image"
 import Link from "next/link"
 
-type Annoucements = {
+type Announcement = {
     id:number;
     title:string;
     class:string;
-    date:string; 
+    date:string;
 }
 
 const columns =[
@@ -20,9 +20,8 @@ const columns =[
     },
     {
         header:"Class",
-        accessor : "class",   
+        accessor : "class",    
     },
-
     {
         header:"Date",
         accessor : "date", 
@@ -34,8 +33,8 @@ const columns =[
     }
 ]
 
-const ListAnnoucements = () => {
-    const renderRow = (item: Annoucements) => (
+const ListAnnouncement = () => {
+    const renderRow = (item: Announcement) => (
         <tr key={item.id} className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lamaPurpleLight">
             <td className="flex items-center gap-4 p-4">
                 <h3>{item.title}</h3>
@@ -65,7 +64,7 @@ const ListAnnoucements = () => {
     <div className='flex flex-col gap-4 p-4 mx-8 bg-white rounded'>
         {/* TOP */}
         <div className="-xl w-full h-full flex justify-between">
-            <h1 className="hidden md:block text-semibold text-lg">All Annoucements</h1>
+            <h1 className="hidden md:block text-semibold text-lg">All Announcements</h1>
             <div className="flex flex-col md:flex-row items-center w-full md:w-auto gap-4">
                 <TableSearch/>
                 <div className="flex gap-2">
@@ -93,4 +92,4 @@ const ListAnnoucements = () => {
   )
 }
 
-export default ListAnnoucements
+export default ListAnnouncement
