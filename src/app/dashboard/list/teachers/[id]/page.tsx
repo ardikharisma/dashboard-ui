@@ -1,6 +1,7 @@
 import Announcement from "@/components/Announcement"
 import BigCalendar from "@/components/BigCalendar"
 import Image from "next/image"
+import Link from "next/link"
 
 const SingleTeacherPage = () => {
   return (
@@ -77,7 +78,7 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">
+                <h1 className="text-xl font-semibold">2
                 </h1>
                 <span className="text-sm text-gray-400">Branches</span>
               </div>
@@ -92,7 +93,7 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">
+                <h1 className="text-xl font-semibold">7
                 </h1>
                 <span className="text-sm text-gray-400">Lessons</span>
               </div>
@@ -107,7 +108,7 @@ const SingleTeacherPage = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">
+                <h1 className="text-xl font-semibold">7
                 </h1>
                 <span className="text-sm text-gray-400">Classes</span>
               </div>
@@ -125,6 +126,11 @@ const SingleTeacherPage = () => {
         <div className="bg-white p-4 rounded-md">
           <h1 className="text-xl font-semibold">Shortcuts</h1>
           <div className="mt-4 flex gap-4 flex-wrap text-xs text-gray-500">
+              <Link className="p-3 rounded-md bg-lamaSkyLight" href="">Teacher&apos;s Classes</Link>
+              <Link className="p-3 rounded-md bg-lamaPurpleLight" href="">Teacher&apos;s Classes</Link>
+              <Link className="p-3 rounded-md bg-lamaSkyLight" href="">Teacher&apos;s Classes</Link>
+              <Link className="p-3 rounded-md bg-lamaYellowLight" href="">Teacher&apos;s Classes</Link>
+              <Link className="p-3 rounded-md bg-lamaSkyLight" href="">Teacher&apos;s Classes</Link>
           </div>
         </div>
         <Announcement/> 
